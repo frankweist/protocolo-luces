@@ -1,0 +1,453 @@
+// src/data/zones.js
+
+// Datos de zonas y puntos de luz del protocolo de luces
+
+export const ZONES = [
+  // ==================== CONSIGNA / RECEPCIÓN ====================
+  {
+    id: "consigna",
+    name: "Consigna / Recepción hotel",
+    items: [
+      {
+        id: "consigna-downlights-coche",
+        name: "Downlights alrededor coche",
+        cuadro: "Office 1ª TS (Brinkmann)",
+        escena: "E7 (EVENTOS – activación manual)",
+        horario: "Manual",
+        imagen: "/images/consigna/downlights_coche.jpg",
+      },
+      {
+        id: "consigna-dicroicas-munecas",
+        name: "Dicroicas muñecas",
+        cuadro: "Cuadro Office tras chupadeo",
+        escena: "Permanente",
+        horario: "Permanente",
+        imagen: "/images/consigna/dicroicas_munecas.jpg",
+      },
+      {
+        id: "consigna-focos-arte-pasillo",
+        name: "Focos obras de arte hacia pasillo 1ª planta",
+        cuadro: "Cuadro Office tras chupadeo",
+        escena: "Permanente",
+        horario: "Permanente",
+        imagen: "/images/consigna/focos_arte.jpg",
+      },
+    ],
+  },
+
+  // ==================== TORRE SUR (TS) ====================
+  {
+    id: "torre-sur",
+    name: "Torre Sur (TS)",
+    items: [
+      {
+        id: "ts-downlights-chupadeos",
+        name: "Downlights chupadeos",
+        cuadro: "Office 1ª TS (Brinkmann)",
+        escena: "E3 (LIMPIEZA)",
+        horario: "06:00–08:00",
+      },
+      {
+        id: "ts-dicroicas-chupadeos",
+        name: "Dicroicas chupadeos",
+        cuadro: "Office 1ª TS (Brinkmann)",
+        escena: "E5",
+        horario: "09:00–17:00 / OFF 02:00",
+      },
+      {
+        id: "ts-mesa-austin-escalera",
+        name: "Mesa Austin + Escalera (laterales)",
+        cuadro: "Office 1ª TS (Brinkmann)",
+        escena: "E7 (EVENTOS)",
+        horario: "Manual",
+      },
+      {
+        id: "ts-terraza-interior",
+        name: "Terraza chupadeos (fila interior)",
+        cuadro: "Office 1ª TS (Brinkmann)",
+        escena: "E3",
+        horario: "06:00–08:00",
+      },
+      {
+        id: "ts-terraza-exterior",
+        name: "Terraza chupadeos (fila exterior)",
+        cuadro: "Office 1ª TS (Brinkmann)",
+        escena: "E12",
+        horario: "OCASO–02:00",
+      },
+      {
+        id: "ts-austin-centro",
+        name: "Mesa Austin + escalera (fila centro)",
+        cuadro: "Office 1ª TS (Brinkmann)",
+        escena: "E6",
+        horario: "08:00–02:00",
+      },
+      {
+        id: "ts-led-barco",
+        name: "LED naranja encima barco",
+        cuadro: "Office 1ª TS (Brinkmann)",
+        escena: "Permanente",
+        horario: "Permanente",
+      },
+      {
+        id: "ts-recepcion-mostrador",
+        name: "Downlights mostrador recepción",
+        cuadro: "Office 1ª TS (Brinkmann)",
+        escena: "E7",
+        horario: "Manual",
+      },
+      {
+        id: "ts-ventas",
+        name: "Lámpara corcho + ventas",
+        cuadro: "Office 1ª TS (Brinkmann)",
+        escena: "E14",
+        horario: "09:00–21:00",
+      },
+      {
+        id: "ts-escalera-barco",
+        name: "Escalera barco",
+        cuadro: "Office 1ª TS (Brinkmann)",
+        escena: "E3",
+        horario: "06:00–08:00",
+      },
+      {
+        id: "ts-cartel-infinity",
+        name: "Foco cartel Infinity (exterior)",
+        cuadro: "Office 1ª TS (Brinkmann)",
+        escena: "E2",
+        horario: "OCASO–ORTO",
+      },
+      {
+        id: "ts-cartel-hotel",
+        name: "Cartel Hotel Higuerón",
+        cuadro: "Office 1ª TS (Brinkmann)",
+        escena: "E2",
+        horario: "OCASO–ORTO",
+      },
+    ],
+  },
+
+  // ==================== TORRE NORTE (TN) ====================
+  {
+    id: "torre-norte",
+    name: "Torre Norte (TN)",
+    items: [
+      {
+        id: "tn-volcanes",
+        name: "Escultura volcanes entrada",
+        cuadro: "Office 1ª TN (Darko)",
+        escena: "E12",
+        horario: "OCASO–02:00",
+      },
+      {
+        id: "tn-estrellas",
+        name: "Estrella LED naranja Austin Bar",
+        cuadro: "Office 1ª TN (Darko)",
+        escena: "E6",
+        horario: "08:00–02:00",
+      },
+      {
+        id: "tn-banadores",
+        name: "Bañadores entrada",
+        cuadro: "Office 1ª TN (Darko)",
+        escena: "E1/E4",
+        horario: "OCASO–02:00 / 06:00–ORTO",
+      },
+      {
+        id: "tn-led-naranja",
+        name: "LED naranja volcanes",
+        cuadro: "Office 1ª TN (Darko)",
+        escena: "E2",
+        horario: "OCASO–ORTO",
+      },
+    ],
+  },
+
+  // ==================== INFINITY ====================
+  {
+    id: "infinity",
+    name: "Infinity",
+    items: [
+      {
+        id: "inf-camas",
+        name: "Camas Infinity",
+        cuadro: "Cuadro cocina Infinity",
+        escena: "E13/E4",
+        horario: "OCASO–02:00 / 06:00–ORTO",
+      },
+      {
+        id: "inf-escalera-evac",
+        name: "Escalera evacuación",
+        cuadro: "Cuadro cocina Infinity",
+        escena: "E1",
+        horario: "OCASO–02:00",
+      },
+      {
+        id: "inf-salon",
+        name: "Downlights salón",
+        cuadro: "Cuadro cocina Infinity",
+        escena: "E13/E2",
+        horario: "OCASO–ORTO",
+      },
+      {
+        id: "inf-vulcanos",
+        name: "Vulcanos (foquitos pared cuadros)",
+        cuadro: "Cuadro cocina Infinity",
+        escena: "E13/E6",
+        horario: "08:00–02:00",
+      },
+    ],
+  },
+
+  // ==================== SPORT ====================
+  {
+    id: "sport",
+    name: "Sport (entrada)",
+    items: [
+      {
+        id: "sport-escalera",
+        name: "Escalera entrada",
+        cuadro: "Cuadro entrada Sport",
+        escena: "E8",
+        horario: "OCASO–02:00 / 06:00–ORTO",
+      },
+      {
+        id: "sport-focos-suelo",
+        name: "Focos suelo entrada",
+        cuadro: "Cuadro entrada Sport",
+        escena: "E1",
+        horario: "OCASO–02:00",
+      },
+      {
+        id: "sport-hall",
+        name: "Hall entrada (lámpara techo, foseado)",
+        cuadro: "Cuadro entrada Sport",
+        escena: "E8",
+        horario: "OCASO–02:00 / 06:00–ORTO",
+      },
+    ],
+  },
+
+  // ==================== MED / COCINA PRINCIPAL ====================
+  {
+    id: "med",
+    name: "Med / Cocina principal",
+    items: [
+      {
+        id: "med-terraza-ext",
+        name: "Terraza Med EXTERIOR (fila exterior)",
+        cuadro: "Cuadro P. Cocina",
+        escena: "E12/E4",
+        horario: "OCASO–02:00 / 06:00–ORTO",
+      },
+      {
+        id: "med-vuelo-int",
+        name: "Vuelo exterior Med (fila interior)",
+        cuadro: "Cuadro P. Cocina",
+        escena: "E12/E4",
+        horario: "OCASO–02:00 / 06:00–ORTO",
+      },
+      {
+        id: "med-banadores",
+        name: "Bañadores MED",
+        cuadro: "Cuadro P. Cocina",
+        escena: "E1/E4",
+        horario: "OCASO–02:00 / 06:00–ORTO",
+      },
+      {
+        id: "med-ascensores-arte",
+        name: "Dicroicas ascensores + obras de arte",
+        cuadro: "Cuadro P. Cocina",
+        escena: "Permanente",
+        horario: "Permanente",
+      },
+      {
+        id: "med-refuerzo-picasso",
+        name: "Pasillo hall Picasso (refuerzo)",
+        cuadro: "Cuadro P. Cocina",
+        escena: "E3",
+        horario: "06:00–08:00",
+      },
+      {
+        id: "med-piscina-fuente-jacuzzi",
+        name: "Piscina, fuente y jacuzzi",
+        cuadro: "Cuadro P. Cocina",
+        escena: "E9",
+        horario: "OCASO–08:00",
+      },
+    ],
+  },
+
+  // ==================== BUFFET ====================
+  {
+    id: "buffet",
+    name: "Buffet",
+    items: [
+      {
+        id: "buffet-leds-med",
+        name: "LEDs salón Med",
+        cuadro: "Cuadro Buffet",
+        escena: "E10",
+        horario: "05:00–01:00",
+      },
+      {
+        id: "buffet-peces-led",
+        name: "Peces (LED)",
+        cuadro: "Cuadro Buffet",
+        escena: "E6",
+        horario: "08:00–02:00",
+      },
+      {
+        id: "buffet-dicroicas-peces",
+        name: "Dicroicas encima peces",
+        cuadro: "Cuadro Buffet",
+        escena: "E12",
+        horario: "OCASO–02:00",
+      },
+      {
+        id: "buffet-tapies-hall",
+        name: "Pasillo exterior Tapies + hall",
+        cuadro: "Cuadro Buffet",
+        escena: "E12/E4",
+        horario: "OCASO–02:00 / 06:00–ORTO",
+      },
+    ],
+  },
+
+  // ==================== PICASSO / HALL GYM ====================
+  {
+    id: "picasso",
+    name: "Picasso / Hall gimnasio",
+    items: [
+      {
+        id: "pic-terraza-ext",
+        name: "Terraza Picasso (fila exterior)",
+        cuadro: "Cuadro Rack Picasso",
+        escena: "E12",
+        horario: "OCASO–02:00",
+      },
+      {
+        id: "pic-terraza-resto",
+        name: "Terraza Picasso (resto)",
+        cuadro: "Cuadro Rack Picasso / Tablet salón",
+        escena: "Tablet sala",
+        horario: "Según programación sala",
+      },
+      {
+        id: "pic-ascensor",
+        name: "Ascensor + dicroicas",
+        cuadro: "Cuadro Rack Picasso",
+        escena: "Permanente",
+        horario: "Permanente",
+      },
+      {
+        id: "pic-pasillo-gym",
+        name: "Pasillo gym + LEDs hall",
+        cuadro: "Cuadro Rack Picasso",
+        escena: "E11",
+        horario: "06:00–01:00",
+      },
+    ],
+  },
+
+  // ==================== PARKING AZUL ====================
+  {
+    id: "parking",
+    name: "Parking Azul",
+    items: [
+      {
+        id: "park-led-naranja",
+        name: "LED naranja hall ascensor",
+        cuadro: "Cuadro parking azul",
+        escena: "E12/E6",
+        horario: "OCASO–02:00 / 08:00–02:00",
+      },
+      {
+        id: "park-pasillo-aseos",
+        name: "Downlights pasillo aseos",
+        cuadro: "Cuadro parking azul",
+        escena: "Manual",
+        horario: "Manual",
+      },
+      {
+        id: "park-hall-ascensor",
+        name: "Downlights hall ascensor",
+        cuadro: "Cuadro parking azul",
+        escena: "E7",
+        horario: "EVENTOS (manual)",
+      },
+    ],
+  },
+
+  // ==================== LEIRO ====================
+  {
+    id: "leiro",
+    name: "Torre Leiro",
+    items: [
+      {
+        id: "leiro-atrio",
+        name: "Techo atrio",
+        cuadro: "Planta 0 Torre Leiro",
+        escena: "Reloj",
+        horario: "20:00–02:00",
+      },
+      {
+        id: "leiro-muro",
+        name: "Muro cortina",
+        cuadro: "Planta 0 Torre Leiro",
+        escena: "Reloj",
+        horario: "20:00–02:00",
+      },
+      {
+        id: "leiro-grafitis",
+        name: "Grafitis",
+        cuadro: "Planta 0 Torre Leiro",
+        escena: "Reloj",
+        horario: "20:00–02:00",
+      },
+    ],
+  },
+
+  // ==================== PISTAS / VILLAS / RESIDENCES ====================
+  {
+    id: "pistas",
+    name: "Pistas / Residences / Villas",
+    items: [
+      {
+        id: "pistas-padel",
+        name: "Pistas pádel",
+        cuadro: "Cuadros pistas pádel",
+        escena: "MYHOME",
+        horario: "Según recepción Sport",
+      },
+      {
+        id: "pistas-tenis",
+        name: "Pistas tenis/basket",
+        cuadro: "Cuadro pista tenis",
+        escena: "MYHOME",
+        horario: "Según recepción Sport",
+      },
+      {
+        id: "pistas-volley",
+        name: "Pistas volley",
+        cuadro: "Cuadro debajo puente",
+        escena: "MYHOME",
+        horario: "06:30–07:30 / 20:00–02:00",
+      },
+      {
+        id: "villas-exteriores",
+        name: "Exteriores Villas",
+        cuadro: "Cuadro general Villas",
+        escena: "Reloj",
+        horario: "20:00–02:00 / 06:30–07:30",
+      },
+      {
+        id: "residences-exteriores",
+        name: "Exteriores apartamentos bloque B",
+        cuadro: "Cuadro general apartamentos B",
+        escena: "Reloj",
+        horario: "20:00–02:00 / 06:30–07:30",
+      },
+    ],
+  },
+];
