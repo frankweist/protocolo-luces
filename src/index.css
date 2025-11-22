@@ -393,4 +393,48 @@ body {
     width: 100%;
     max-height: 160px;
   }
+  /* ===== Sidebar Mejorado ===== */
+
+.sidebar-list {
+  overflow-y: auto;
+  max-height: 60vh;
+  scrollbar-width: thin;
+}
+
+/* Scroll visible en Android/Chrome */
+.sidebar-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar-list::-webkit-scrollbar-thumb {
+  background: #0ea5e9;
+  border-radius: 10px;
+}
+
+/* Sombra para indicar que hay más contenido */
+.app-sidebar {
+  position: relative;
+}
+
+.app-sidebar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, #020617);
+  pointer-events: none;
+}
+
+/* Letras más grandes */
+.sidebar-zone-name {
+  font-size: 15px !important;
+  font-weight: 600;
+}
+
+.sidebar-zone-meta {
+  font-size: 12px !important;
+}
+
 }
