@@ -1,4 +1,5 @@
 // src/data/zones.js
+// Archivo COMPLETO y ACTUALIZADO con todas las imágenes
 
 export const ZONES = [
   // ==================== CONSIGNA / RECEPCIÓN ====================
@@ -12,7 +13,7 @@ export const ZONES = [
         cuadro: "Office 1ª TS (Brinkmann)",
         escena: "E7 (EVENTOS – activación manual)",
         horario: "Manual",
-        imagen: "./images/consigna/downlights_coche.jpg",
+        imagen: "/images/consigna/downlights_coche.jpg",
       },
       {
         id: "consigna-dicroicas-munecas",
@@ -20,7 +21,7 @@ export const ZONES = [
         cuadro: "Cuadro Office tras chupadeo",
         escena: "Permanente",
         horario: "Permanente",
-        imagen: "./images/consigna/dicroicas_munecas.jpg",
+        imagen: "/images/consigna/dicroicas_munecas.jpg",
       },
       {
         id: "consigna-focos-arte-pasillo",
@@ -28,7 +29,7 @@ export const ZONES = [
         cuadro: "Cuadro Office tras chupadeo",
         escena: "Permanente",
         horario: "Permanente",
-        imagen: "./images/consigna/focos_arte.jpg",
+        imagen: "/images/consigna/focos_arte_pasillo_1p.jpg",
       },
     ],
   },
@@ -44,6 +45,7 @@ export const ZONES = [
         cuadro: "Office 1ª TS (Brinkmann)",
         escena: "E3 (LIMPIEZA)",
         horario: "06:00–08:00",
+        imagen: "/images/torre_sur/downlights_chupadeos.jpg",
       },
       {
         id: "ts-dicroicas-chupadeos",
@@ -51,6 +53,7 @@ export const ZONES = [
         cuadro: "Office 1ª TS (Brinkmann)",
         escena: "E5",
         horario: "09:00–17:00 / OFF 02:00",
+        imagen: "/images/torre_sur/dicroicas_chupadeos.jpg",
       },
       {
         id: "ts-mesa-austin-escalera",
@@ -58,6 +61,7 @@ export const ZONES = [
         cuadro: "Office 1ª TS (Brinkmann)",
         escena: "E7 (EVENTOS)",
         horario: "Manual",
+        imagen: "/images/torre_sur/mesa_austin_escalera_laterales.jpg",
       },
       {
         id: "ts-terraza-interior",
@@ -65,6 +69,7 @@ export const ZONES = [
         cuadro: "Office 1ª TS (Brinkmann)",
         escena: "E3",
         horario: "06:00–08:00",
+        imagen: "/images/torre_sur/terraza_chupadeos_interior.jpg",
       },
       {
         id: "ts-terraza-exterior",
@@ -72,6 +77,7 @@ export const ZONES = [
         cuadro: "Office 1ª TS (Brinkmann)",
         escena: "E12",
         horario: "OCASO–02:00",
+        imagen: "/images/torre_sur/terraza_chupadeos_exterior.jpg",
       },
       {
         id: "ts-austin-centro",
@@ -79,6 +85,7 @@ export const ZONES = [
         cuadro: "Office 1ª TS (Brinkmann)",
         escena: "E6",
         horario: "08:00–02:00",
+        imagen: "/images/torre_sur/mesa_austin_escalera_centro.jpg",
       },
       {
         id: "ts-led-barco",
@@ -86,6 +93,7 @@ export const ZONES = [
         cuadro: "Office 1ª TS (Brinkmann)",
         escena: "Permanente",
         horario: "Permanente",
+        imagen: "/images/torre_sur/led_naranja_barco.jpg",
       },
       {
         id: "ts-recepcion-mostrador",
@@ -93,6 +101,7 @@ export const ZONES = [
         cuadro: "Office 1ª TS (Brinkmann)",
         escena: "E7",
         horario: "Manual",
+        imagen: "/images/torre_sur/downlights_mostrador_recepcion.jpg",
       },
       {
         id: "ts-ventas",
@@ -100,6 +109,7 @@ export const ZONES = [
         cuadro: "Office 1ª TS (Brinkmann)",
         escena: "E14",
         horario: "09:00–21:00",
+        imagen: "/images/torre_sur/lampara_corcho_ventas.jpg",
       },
       {
         id: "ts-escalera-barco",
@@ -107,6 +117,7 @@ export const ZONES = [
         cuadro: "Office 1ª TS (Brinkmann)",
         escena: "E3",
         horario: "06:00–08:00",
+        imagen: "/images/torre_sur/escalera_barco.jpg",
       },
       {
         id: "ts-cartel-infinity",
@@ -114,6 +125,7 @@ export const ZONES = [
         cuadro: "Office 1ª TS (Brinkmann)",
         escena: "E2",
         horario: "OCASO–ORTO",
+        imagen: "/images/torre_sur/foco_cartel_infinity.jpg",
       },
       {
         id: "ts-cartel-hotel",
@@ -121,11 +133,12 @@ export const ZONES = [
         cuadro: "Office 1ª TS (Brinkmann)",
         escena: "E2",
         horario: "OCASO–ORTO",
+        imagen: "/images/torre_sur/cartel_hotel_higueron.jpg",
       },
     ],
   },
 
-  // ==================== TORRE NORTE (TN) ====================
+  // ==================== TORRE NORTE ====================
   {
     id: "torre-norte",
     name: "Torre Norte (TN)",
@@ -136,6 +149,7 @@ export const ZONES = [
         cuadro: "Office 1ª TN (Darko)",
         escena: "E12",
         horario: "OCASO–02:00",
+        imagen: "/images/torre_norte/escultura_volcanes.jpg",
       },
       {
         id: "tn-estrellas",
@@ -143,6 +157,7 @@ export const ZONES = [
         cuadro: "Office 1ª TN (Darko)",
         escena: "E6",
         horario: "08:00–02:00",
+        imagen: "/images/torre_norte/estrella_led_naranja_austin.jpg",
       },
       {
         id: "tn-banadores",
@@ -150,6 +165,7 @@ export const ZONES = [
         cuadro: "Office 1ª TN (Darko)",
         escena: "E1/E4",
         horario: "OCASO–02:00 / 06:00–ORTO",
+        imagen: "/images/torre_norte/banadores_entrada.jpg",
       },
       {
         id: "tn-led-naranja",
@@ -157,6 +173,7 @@ export const ZONES = [
         cuadro: "Office 1ª TN (Darko)",
         escena: "E2",
         horario: "OCASO–ORTO",
+        imagen: "/images/torre_norte/led_naranja_volcanes.jpg",
       },
     ],
   },
@@ -172,6 +189,7 @@ export const ZONES = [
         cuadro: "Cuadro cocina Infinity",
         escena: "E13/E4",
         horario: "OCASO–02:00 / 06:00–ORTO",
+        imagen: "/images/infinity/camas_infinity.jpg",
       },
       {
         id: "inf-escalera-evac",
@@ -179,6 +197,7 @@ export const ZONES = [
         cuadro: "Cuadro cocina Infinity",
         escena: "E1",
         horario: "OCASO–02:00",
+        imagen: "/images/infinity/escalera_evacuacion.jpg",
       },
       {
         id: "inf-salon",
@@ -186,6 +205,7 @@ export const ZONES = [
         cuadro: "Cuadro cocina Infinity",
         escena: "E13/E2",
         horario: "OCASO–ORTO",
+        imagen: "/images/infinity/downlights_salon_infinity.jpg",
       },
       {
         id: "inf-vulcanos",
@@ -193,6 +213,7 @@ export const ZONES = [
         cuadro: "Cuadro cocina Infinity",
         escena: "E13/E6",
         horario: "08:00–02:00",
+        imagen: "/images/infinity/vulcanos_pared_cuadros.jpg",
       },
     ],
   },
@@ -208,6 +229,7 @@ export const ZONES = [
         cuadro: "Cuadro entrada Sport",
         escena: "E8",
         horario: "OCASO–02:00 / 06:00–ORTO",
+        imagen: "/images/sport/escalera_entrada_sport.jpg",
       },
       {
         id: "sport-focos-suelo",
@@ -215,6 +237,7 @@ export const ZONES = [
         cuadro: "Cuadro entrada Sport",
         escena: "E1",
         horario: "OCASO–02:00",
+        imagen: "/images/sport/focos_suelo_sport.jpg",
       },
       {
         id: "sport-hall",
@@ -222,11 +245,12 @@ export const ZONES = [
         cuadro: "Cuadro entrada Sport",
         escena: "E8",
         horario: "OCASO–02:00 / 06:00–ORTO",
+        imagen: "/images/sport/hall_entrada_sport.jpg",
       },
     ],
   },
 
-  // ==================== MED / COCINA PRINCIPAL ====================
+  // ==================== MED ====================
   {
     id: "med",
     name: "Med / Cocina principal",
@@ -237,6 +261,7 @@ export const ZONES = [
         cuadro: "Cuadro P. Cocina",
         escena: "E12/E4",
         horario: "OCASO–02:00 / 06:00–ORTO",
+        imagen: "/images/med/terraza_med_exterior.jpg",
       },
       {
         id: "med-vuelo-int",
@@ -244,6 +269,7 @@ export const ZONES = [
         cuadro: "Cuadro P. Cocina",
         escena: "E12/E4",
         horario: "OCASO–02:00 / 06:00–ORTO",
+        imagen: "/images/med/vuelo_exterior_med.jpg",
       },
       {
         id: "med-banadores",
@@ -251,6 +277,7 @@ export const ZONES = [
         cuadro: "Cuadro P. Cocina",
         escena: "E1/E4",
         horario: "OCASO–02:00 / 06:00–ORTO",
+        imagen: "/images/med/banadores_med.jpg",
       },
       {
         id: "med-ascensores-arte",
@@ -258,6 +285,7 @@ export const ZONES = [
         cuadro: "Cuadro P. Cocina",
         escena: "Permanente",
         horario: "Permanente",
+        imagen: "/images/med/dicroicas_ascensores_arte.jpg",
       },
       {
         id: "med-refuerzo-picasso",
@@ -265,6 +293,7 @@ export const ZONES = [
         cuadro: "Cuadro P. Cocina",
         escena: "E3",
         horario: "06:00–08:00",
+        imagen: "/images/med/pasillo_picasso_refuerzo.jpg",
       },
       {
         id: "med-piscina-fuente-jacuzzi",
@@ -272,6 +301,7 @@ export const ZONES = [
         cuadro: "Cuadro P. Cocina",
         escena: "E9",
         horario: "OCASO–08:00",
+        imagen: "/images/med/piscina_fuente_jacuzzi.jpg",
       },
     ],
   },
@@ -287,6 +317,7 @@ export const ZONES = [
         cuadro: "Cuadro Buffet",
         escena: "E10",
         horario: "05:00–01:00",
+        imagen: "/images/buffet/leds_salon_med.jpg",
       },
       {
         id: "buffet-peces-led",
@@ -294,6 +325,7 @@ export const ZONES = [
         cuadro: "Cuadro Buffet",
         escena: "E6",
         horario: "08:00–02:00",
+        imagen: "/images/buffet/peces_led.jpg",
       },
       {
         id: "buffet-dicroicas-peces",
@@ -301,6 +333,7 @@ export const ZONES = [
         cuadro: "Cuadro Buffet",
         escena: "E12",
         horario: "OCASO–02:00",
+        imagen: "/images/buffet/dicroicas_encima_peces.jpg",
       },
       {
         id: "buffet-tapies-hall",
@@ -308,11 +341,12 @@ export const ZONES = [
         cuadro: "Cuadro Buffet",
         escena: "E12/E4",
         horario: "OCASO–02:00 / 06:00–ORTO",
+        imagen: "/images/buffet/pasillo_tapies_hall.jpg",
       },
     ],
   },
 
-  // ==================== PICASSO / HALL GYM ====================
+  // ==================== PICASSO ====================
   {
     id: "picasso",
     name: "Picasso / Hall gimnasio",
@@ -323,6 +357,7 @@ export const ZONES = [
         cuadro: "Cuadro Rack Picasso",
         escena: "E12",
         horario: "OCASO–02:00",
+        imagen: "/images/picasso/terraza_picasso_exterior.jpg",
       },
       {
         id: "pic-terraza-resto",
@@ -330,6 +365,7 @@ export const ZONES = [
         cuadro: "Cuadro Rack Picasso / Tablet salón",
         escena: "Tablet sala",
         horario: "Según programación sala",
+        imagen: "/images/picasso/terraza_picasso_resto.jpg",
       },
       {
         id: "pic-ascensor",
@@ -337,6 +373,7 @@ export const ZONES = [
         cuadro: "Cuadro Rack Picasso",
         escena: "Permanente",
         horario: "Permanente",
+        imagen: "/images/picasso/ascensor_dicroicas_picasso.jpg",
       },
       {
         id: "pic-pasillo-gym",
@@ -344,11 +381,12 @@ export const ZONES = [
         cuadro: "Cuadro Rack Picasso",
         escena: "E11",
         horario: "06:00–01:00",
+        imagen: "/images/picasso/pasillo_gym_led_hall.jpg",
       },
     ],
   },
 
-  // ==================== PARKING AZUL ====================
+  // ==================== PARKING ====================
   {
     id: "parking",
     name: "Parking Azul",
@@ -359,6 +397,7 @@ export const ZONES = [
         cuadro: "Cuadro parking azul",
         escena: "E12/E6",
         horario: "OCASO–02:00 / 08:00–02:00",
+        imagen: "/images/parking/led_naranja_hall_ascensor.jpg",
       },
       {
         id: "park-pasillo-aseos",
@@ -366,6 +405,7 @@ export const ZONES = [
         cuadro: "Cuadro parking azul",
         escena: "Manual",
         horario: "Manual",
+        imagen: "/images/parking/downlights_pasillo_aseos.jpg",
       },
       {
         id: "park-hall-ascensor",
@@ -373,6 +413,7 @@ export const ZONES = [
         cuadro: "Cuadro parking azul",
         escena: "E7",
         horario: "EVENTOS (manual)",
+        imagen: "/images/parking/downlights_hall_ascensor.jpg",
       },
     ],
   },
@@ -388,6 +429,7 @@ export const ZONES = [
         cuadro: "Planta 0 Torre Leiro",
         escena: "Reloj",
         horario: "20:00–02:00",
+        imagen: "/images/leiro/techo_atrio_leiro.jpg",
       },
       {
         id: "leiro-muro",
@@ -395,6 +437,7 @@ export const ZONES = [
         cuadro: "Planta 0 Torre Leiro",
         escena: "Reloj",
         horario: "20:00–02:00",
+        imagen: "/images/leiro/muro_cortina_leiro.jpg",
       },
       {
         id: "leiro-grafitis",
@@ -402,6 +445,7 @@ export const ZONES = [
         cuadro: "Planta 0 Torre Leiro",
         escena: "Reloj",
         horario: "20:00–02:00",
+        imagen: "/images/leiro/grafitis_leiro.jpg",
       },
     ],
   },
@@ -417,6 +461,7 @@ export const ZONES = [
         cuadro: "Cuadros pistas pádel",
         escena: "MYHOME",
         horario: "Según recepción Sport",
+        imagen: "/images/pistas/pistas_padel.jpg",
       },
       {
         id: "pistas-tenis",
@@ -424,6 +469,7 @@ export const ZONES = [
         cuadro: "Cuadro pista tenis",
         escena: "MYHOME",
         horario: "Según recepción Sport",
+        imagen: "/images/pistas/pistas_tenis_basket.jpg",
       },
       {
         id: "pistas-volley",
@@ -431,6 +477,7 @@ export const ZONES = [
         cuadro: "Cuadro debajo puente",
         escena: "MYHOME",
         horario: "06:30–07:30 / 20:00–02:00",
+        imagen: "/images/pistas/pistas_volley.jpg",
       },
       {
         id: "villas-exteriores",
@@ -438,6 +485,7 @@ export const ZONES = [
         cuadro: "Cuadro general Villas",
         escena: "Reloj",
         horario: "20:00–02:00 / 06:30–07:30",
+        imagen: "/images/pistas/villas_exteriores.jpg",
       },
       {
         id: "residences-exteriores",
@@ -445,6 +493,7 @@ export const ZONES = [
         cuadro: "Cuadro general apartamentos B",
         escena: "Reloj",
         horario: "20:00–02:00 / 06:30–07:30",
+        imagen: "/images/pistas/residences_exteriores_bloque_b.jpg",
       },
     ],
   },
