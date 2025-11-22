@@ -1,7 +1,5 @@
 // src/data/zones.js
 
-// Datos de zonas y puntos de luz del protocolo de luces
-
 export const ZONES = [
   // ==================== CONSIGNA / RECEPCIÓN ====================
   {
@@ -14,7 +12,7 @@ export const ZONES = [
         cuadro: "Office 1ª TS (Brinkmann)",
         escena: "E7 (EVENTOS – activación manual)",
         horario: "Manual",
-        imagen: "/images/consigna/downlights_coche.jpg",
+        imagen: "./images/consigna/downlights_coche.jpg",
       },
       {
         id: "consigna-dicroicas-munecas",
@@ -22,7 +20,7 @@ export const ZONES = [
         cuadro: "Cuadro Office tras chupadeo",
         escena: "Permanente",
         horario: "Permanente",
-        imagen: "/images/consigna/dicroicas_munecas.jpg",
+        imagen: "./images/consigna/dicroicas_munecas.jpg",
       },
       {
         id: "consigna-focos-arte-pasillo",
@@ -30,7 +28,7 @@ export const ZONES = [
         cuadro: "Cuadro Office tras chupadeo",
         escena: "Permanente",
         horario: "Permanente",
-        imagen: "/images/consigna/focos_arte.jpg",
+        imagen: "./images/consigna/focos_arte.jpg",
       },
     ],
   },
