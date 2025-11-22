@@ -2,21 +2,6 @@
 
 import React from "react";
 
-// Icono automático según el tipo de luz
-function getIconForItem(name) {
-  const n = name.toLowerCase();
-  if (n.includes("downlight")) return "💡";
-  if (n.includes("dicroica")) return "✨";
-  if (n.includes("led")) return "🔌";
-  if (n.includes("terraza")) return "🌙";
-  if (n.includes("piscina") || n.includes("jacuzzi")) return "🏊";
-  if (n.includes("escalera")) return "🪜";
-  if (n.includes("parking")) return "🅿️";
-  if (n.includes("banadores") || n.includes("bañadores")) return "🌊";
-  if (n.includes("arte") || n.includes("obra")) return "🎨";
-  return "🔆";
-}
-
 export default function LightCard({
   item,
   state,
@@ -24,83 +9,73 @@ export default function LightCard({
   markFallo,
   updateNota,
 }) {
-  const icon = getIconForItem(item.name);
-
-  const st = {
-    revisada: state.revisada || false,
-    fallo: state.fallo || false,
-    nota: state.nota || "",
-  };
+  const cardClass =
+    "item-card-horizontal " +
+    (state.fallo ? "item-card-error" : state.revisada ? "item-card-ok" : "");
 
   return (
-    <div className="item-card">
-      {/* Imagen del punto de luz */}
+    <div className={cardClass}>
+      {/* IMAGEN */}
       {item.imagen && (
-        <img
-          src={item.imagen}
-          alt={item.name}
-          className="item-image"
-        />
+        <div className="item-image-wrapper">
+          <img
+            src={item.imagen}
+            alt={item.name}
+            className="item-image"
+            loading="lazy"
+          />
+        </div>
       )}
 
-      {/* Cabecera del item */}
-      <div className="item-header">
+      {/* CONTENIDO */}
+      <div className="item-content">
+        {/* SOLO NOMBRE (sin iconos) */}
         <div className="item-title-block">
-          <div className="item-icon">{icon}</div>
-
-          <div>
-            <div className="item-name">{item.name}</div>
-
-            <div className="item-meta">
-              <strong>Cuadro:</strong> {item.cuadro}
-            </div>
-
-            <div className="item-meta">
-              <strong>Escena:</strong> {item.escena}
-            </div>
-
-            <div className="item-meta">
-              <strong>Horario:</strong> {item.horario}
-            </div>
-          </div>
+          <div className="item-name">{item.name}</div>
         </div>
 
-        {/* Botones de estado */}
-        <div className="item-buttons">
+        {/* CHIPS */}
+        <div className="item-chips">
+          <span className="chip chip-cuadro">{item.cuadro}</span>
+          <span className="chip chip-escena">{item.escena}</span>
+          <span className="chip chip-horario">{item.horario}</span>
+        </div>
 
-          {/* Todo OK */}
+        {/* BOTONES */}
+        <div
+          style={{
+            marginTop: "10px",
+            display: "flex",
+            gap: "8px",
+          }}
+        >
           <button
             className={
-              "tag" + (st.revisada && !st.fallo ? " tag-ok" : " tag-muted")
+              "tag " + (state.revisada && !state.fallo ? "tag-ok" : "")
             }
             onClick={() => markTodoOk(item.id)}
           >
             Todo OK
           </button>
 
-          {/* Fallo */}
           <button
-            className={
-              "tag" + (st.fallo ? " tag-error" : " tag-muted")
-            }
+            className={"tag " + (state.fallo ? "tag-error" : "")}
             onClick={() => markFallo(item.id)}
           >
             Fallo
           </button>
-
         </div>
-      </div>
 
-      {/* Campo de nota si hay fallo */}
-      {st.fallo && (
-        <textarea
-          className="item-notes"
-          rows={2}
-          value={st.nota}
-          onChange={(e) => updateNota(item.id, e.target.value)}
-          placeholder="Describe el fallo…"
-        />
-      )}
+        {/* NOTA DE FALLO */}
+        {state.fallo && (
+          <textarea
+            className="item-notes"
+            placeholder="Describe el fallo…"
+            value={state.nota || ""}
+            onChange={(e) => updateNota(item.id, e.target.value)}
+          />
+        )}
+      </div>
     </div>
   );
 }

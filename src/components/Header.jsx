@@ -7,13 +7,13 @@ export default function Header({ view, setView }) {
     <header className="app-header">
       <div>
         <h1>Protocolo Luces – Turno Noche</h1>
-        <p>Revisión por zonas + Parte automática de incidencias</p>
+        <p>Revisión diaria por zonas · Parte automática de incidencias</p>
       </div>
 
       <div className="view-tabs">
         <button
           className={
-            "view-tab" + (view === "revision" ? " view-tab-active" : "")
+            "view-tab " + (view === "revision" ? "view-tab-active" : "")
           }
           onClick={() => setView("revision")}
         >
@@ -21,9 +21,7 @@ export default function Header({ view, setView }) {
         </button>
 
         <button
-          className={
-            "view-tab" + (view === "parte" ? " view-tab-active" : "")
-          }
+          className={"view-tab " + (view === "parte" ? "view-tab-active" : "")}
           onClick={() => setView("parte")}
         >
           Parte del turno

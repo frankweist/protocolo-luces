@@ -8,15 +8,10 @@ export default function Sidebar({
   setSelectedZoneId,
   state,
 }) {
-  const countStats = (zone) => {
-    let revisadas = 0;
-    let fallos = 0;
-
-    zone.items.forEach((item) => {
-      const st = state[item.id];
-      if (st?.revisada || st?.fallo) revisadas++;
-      if (st?.fallo) fallos++;
-    });
+  const zoneStateSummary = (zone) => {
+    const items = zone.items;
+    const revisadas = items.filter((i) => state[i.id]?.revisada).length;
+    const fallos = items.filter((i) => state[i.id]?.fallo).length;
 
     return { revisadas, fallos };
   };
@@ -27,24 +22,23 @@ export default function Sidebar({
 
       <div className="sidebar-list">
         {zones.map((zone) => {
-          const stats = countStats(zone);
-          const active = zone.id === selectedZoneId;
+          const { revisadas, fallos } = zoneStateSummary(zone);
 
           return (
-            <button
+            <div
               key={zone.id}
               className={
-                "sidebar-zone" + (active ? " sidebar-zone-active" : "")
+                "sidebar-zone " +
+                (selectedZoneId === zone.id ? "sidebar-zone-active" : "")
               }
               onClick={() => setSelectedZoneId(zone.id)}
             >
               <div className="sidebar-zone-name">{zone.name}</div>
-
               <div className="sidebar-zone-meta">
-                {stats.revisadas}/{zone.items.length} revisadas ·{" "}
-                {stats.fallos} fallos
+                {revisadas}/{zone.items.length} revisadas ·{" "}
+                {fallos > 0 ? `${fallos} fallos` : "0 fallos"}
               </div>
-            </button>
+            </div>
           );
         })}
       </div>
