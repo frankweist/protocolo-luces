@@ -1,11 +1,7 @@
 {
   "short_name": "Luces",
   "name": "Protocolo Luces – Turno Noche",
-
-  "id": "/protocolo-luces/",
-  "start_url": "/protocolo-luces/",
-  "scope": "/protocolo-luces/",
-
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#0e3a67",
   "theme_color": "#0ea5e9",
@@ -13,20 +9,72 @@
 
   "icons": [
     {
-      "src": "/protocolo-luces/icons/icon-192.png",
+      "src": "/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/protocolo-luces/icons/icon-512.png",
+      "src": "/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
-
-    /* SPLASH UNIVERSAL */
     {
-      "src": "/protocolo-luces/icons/splash-1000.png",
-      "sizes": "1000x1000",
+      "src": "/splash/splash-640x1136.png",
+      "sizes": "640x1136",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/splash/splash-750x1334.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/splash/splash-828x1792.png",
+      "sizes": "828x1792",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/splash/splash-1080x1920.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/splash/splash-1125x2436.png",
+      "sizes": "1125x2436",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/splash/splash-1242x2208.png",
+      "sizes": "1242x2208",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/splash/splash-1242x2688.png",
+      "sizes": "1242x2688",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/splash/splash-1536x2048.png",
+      "sizes": "1536x2048",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/splash/splash-1668x2388.png",
+      "sizes": "1668x2388",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/splash/splash-2048x2732.png",
+      "sizes": "2048x2732",
       "type": "image/png",
       "purpose": "any"
     }
