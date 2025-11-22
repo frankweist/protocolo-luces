@@ -29,24 +29,31 @@ export default function LightCard({
 
       {/* CONTENIDO */}
       <div className="item-content">
-        {/* SOLO NOMBRE (sin iconos) */}
+
+        {/* TITULO */}
         <div className="item-title-block">
           <div className="item-name">{item.name}</div>
         </div>
 
-        {/* CHIPS */}
+        {/* ETIQUETAS CLARAS Y SEPARADAS */}
         <div className="item-chips">
-          <span className="chip chip-cuadro">{item.cuadro}</span>
-          <span className="chip chip-escena">{item.escena}</span>
-          <span className="chip chip-horario">{item.horario}</span>
+          <span className="chip chip-cuadro">
+            <strong>Ubicación:</strong> {item.cuadro}
+          </span>
+          <span className="chip chip-escena">
+            <strong>Escena:</strong> {item.escena}
+          </span>
+          <span className="chip chip-horario">
+            <strong>Horario:</strong> {item.horario}
+          </span>
         </div>
 
         {/* BOTONES */}
         <div
           style={{
-            marginTop: "10px",
+            marginTop: "12px",
             display: "flex",
-            gap: "8px",
+            gap: "10px",
           }}
         >
           <button
@@ -66,7 +73,7 @@ export default function LightCard({
           </button>
         </div>
 
-        {/* NOTA DE FALLO */}
+        {/* NOTA SI HAY FALLO */}
         {state.fallo && (
           <textarea
             className="item-notes"
