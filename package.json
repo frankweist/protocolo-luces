@@ -1,14 +1,14 @@
 {
   "name": "app-luces",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-    "push": "npm run build && git add . && git commit -m \"update\" && git push && npm run deploy"
+    "push": "node scripts/push-pro-max.cjs"
   },
   "dependencies": {
     "jspdf": "^3.0.4",
